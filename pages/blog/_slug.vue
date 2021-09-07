@@ -1,6 +1,6 @@
 <template>
-  <article>
-    <h1>{{ article.title }}</h1>
+  <article class="max-w-screen-sm bg-gray-50 mx-auto p-6">
+    <h1 class="text-center">{{ article.title }}</h1>
     <nuxt-content :document="article" />
     <div>Data: {{ formatDate(article.createdAt) }} </div>
   </article>
@@ -22,5 +22,4 @@ export default {
 }
 </script>
 <style scoped>
-  
 </style>

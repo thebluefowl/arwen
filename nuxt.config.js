@@ -19,6 +19,12 @@ export default {
     ]
   },
 
+  googleFonts: {
+    families: {
+      'Dancing Script': true
+    }
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
@@ -35,7 +41,10 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts',
+    'nuxt-vite'
+
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
