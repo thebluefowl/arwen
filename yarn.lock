@@ -8476,10 +8476,10 @@ netmask@^2.0.1:
   resolved "https://registry.yarnpkg.com/netmask/-/netmask-2.0.2.tgz#8b01a07644065d536383835823bc52004ebac5e7"
   integrity sha512-dBpDMdxv9Irdq66304OLfEmQ9tbNRFnFTuZiLo+bD+r332bBmMJ8GBLXklIXXgxd3+v9+KUnZaUR5PJMa75Gsg==
 
-nightwatch@^1.7.6:
-  version "1.7.8"
-  resolved "https://registry.yarnpkg.com/nightwatch/-/nightwatch-1.7.8.tgz#484a88af56cd4b8562d89c5cba9ea4ba21272a42"
-  integrity sha512-GTY2VoPU2EuoBUB+mz5tAjeEWRQmuT54Il2lOUTmpv87D7cO8fXaadrxSHwl2YDX9rDFvNZovqwiKBtk3/5R6w==
+nightwatch@^1.7.10:
+  version "1.7.10"
+  resolved "https://registry.yarnpkg.com/nightwatch/-/nightwatch-1.7.10.tgz#157f07682f3d5a13f114d2eecc354e1959d48b09"
+  integrity sha512-YSKm3hiIYEn7BMf6nn1zK24HfkNeXfAAi+2SWFsLDrLu0AXzsiSkFxxxPhUauOKIfsIigfhBDUV3sPFsIIrLyQ==
   dependencies:
     assertion-error "^1.1.0"
     chai-nightwatch "^0.4.0"
