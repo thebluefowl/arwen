@@ -21,7 +21,8 @@ export default {
 
   googleFonts: {
     families: {
-      'Dancing Script': true
+      Lora: true,
+      Roboto: true
     }
   },
 

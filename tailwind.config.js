@@ -3,7 +3,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['Dancing Script', 'serif']
+      display: ['Roboto', 'sans-serif'],
+      serif: ['Lora', 'serif']
     },
     extend: {},
   },
