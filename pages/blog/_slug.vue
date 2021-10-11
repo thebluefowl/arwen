@@ -1,11 +1,12 @@
 <template>
   <div class="max-w-screen-2xl mx-auto">
-    <Header />
-    <article class="bg-gray-50 p-6">
-      <h1 class="text-center font-display text-2xl">{{ article.title }}</h1>
-      <nuxt-content :document="article" class="font-serif" />
-      <div>Data: {{ formatDate(article.createdAt) }} </div>
-    </article>
+    <Header :showPrimaryTitle="false"/>
+    <div class="bg-blue">
+      <h1 class="font-display text-4xl font-bold p-12 pb-1">{{ article.title }}</h1>
+      <div class="px-12 pb-5">{{ formatDate(article.createdAt) }} </div>
+      <nuxt-content :document="article" class="font-serif px-12 tracking-wide leading-relaxed" />
+      
+    </div>
   </div>
 </template>
 
@@ -14,7 +15,7 @@
 import Header from '~/components/Header.vue'
 
 export default {
-  components: [Header],
+  components: {Header},
   async asyncData ({ $content, params }) {
     const article = await $content('articles', params.slug).fetch()
 

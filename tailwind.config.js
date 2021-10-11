@@ -3,7 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      display: ['Roboto', 'sans-serif'],
+      display: ['Inter', 'sans-serif'],
       serif: ['Lora', 'serif']
     },
     extend: {},
@@ -11,5 +11,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp')
+  ],
 }

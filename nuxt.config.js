@@ -22,7 +22,8 @@ export default {
   googleFonts: {
     families: {
       Lora: true,
-      Roboto: true
+      Roboto: true,
+      Inter: true
     }
   },
 

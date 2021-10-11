@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Header />
-    <ArticleList class="mt-8" :articles="articles" />
+    <Header :showPrimaryTitle="true"/>
+    <ArticleList :articles="articles.latest" />
     </div>
 </template>
 
@@ -9,14 +9,20 @@
 import ArticleList from '~/components/ArticleList.vue'
 import Header from '~/components/Header.vue'
 export default {
-  components: [Header, ArticleList],
+  components: {Header, ArticleList},
   async asyncData ({ $content, params }) {
-    const articles = await $content('articles')
-      .only(['title', 'description', 'img', 'slug', 'author'])
+    const latest = await $content('articles')
+      .only(['title', 'summary', 'createdAt', 'slug', 'category'])
       .sortBy('createdAt', 'asc')
+      .limit(4)
+      .fetch()
+    const archives = await $content('articles')
+      .only(['title', 'summary', 'createdAt', 'slug', 'category'])
+      .sortBy('createdAt', 'asc')
+      .skip(4)
       .fetch()
     return {
-      articles
+      articles: {latest, archives}
     }
   }
 }
